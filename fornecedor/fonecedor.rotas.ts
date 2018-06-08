@@ -20,7 +20,7 @@ import {Fornecedor} from './fornecedor.model'
                 })
                 return next()
             })
-        }
+        }   
     }
 
 export const fornecedorRotas = new FornecedorRotas
