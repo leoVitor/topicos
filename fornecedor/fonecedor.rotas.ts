@@ -1,5 +1,5 @@
-import {Rotas} from "../comum/rotas"
 import * as restify from 'restify'
+import {Rotas} from "../comum/rotas"
 import {Fornecedor} from './fornecedor.model'
 
     class FornecedorRotas extends Rotas{

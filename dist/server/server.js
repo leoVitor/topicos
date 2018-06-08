@@ -43,7 +43,7 @@ class Server {
             }
         });
     }
-    inicializar(rotas = []) {
+    inicializar(rotas) {
         return this.inicializarBanco().then(() => this.iniciaRotas(rotas).then(() => this));
     }
 }
