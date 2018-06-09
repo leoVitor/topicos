@@ -6,7 +6,7 @@ import { tratamentoErros } from './tratamento.error';
 
 export class Server{
     aplicacao: restify.Server  = restify.createServer({
-        name:"Leonardo e  Augusto",
+        name:"Teste",
         version:"0.1"
     })
     
@@ -36,7 +36,7 @@ export class Server{
         })
     }
 
-    inicializar(rotas:Rotas[] ):Promise<Server>{
+    inicializar(rotas:Rotas[]):Promise<Server>{
         return this.inicializarBanco().then(
             () =>  this.iniciaRotas(rotas).then( () =>this  )
         )

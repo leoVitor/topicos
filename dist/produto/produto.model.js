@@ -4,18 +4,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importDefault(require("mongoose"));
-const fornecedorSchema = new mongoose_1.default.Schema({
+const produtoSchema = new mongoose_1.default.Schema({
     nome: {
         type: String
     },
-    cnpj: {
+    forn: {
         type: String
     },
-    telefone: {
-        type: String
-    },
-    email: {
+    valor: {
         type: String
     }
 });
-exports.Fornecedor = mongoose_1.default.model('Fornecedor', fornecedorSchema);
+exports.Produto = mongoose_1.default.model('Produto', produtoSchema);
