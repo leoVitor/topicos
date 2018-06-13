@@ -1,0 +1,8 @@
+npm init -y
+tsc --init
+npm i restify --save
+npm i @types/restify --save
+npm i mongoose --save
+npm i @types/mongoose --save
+tsc -w (compilar)
+nodemon dist/main.js

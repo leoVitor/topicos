@@ -6,7 +6,7 @@ import { tratamentoErros } from './tratamento.error';
 
 export class Server{
     aplicacao: restify.Server  = restify.createServer({
-        name:"Teste",
+        name:"Dist Grãos",
         version:"0.1"
     })
     

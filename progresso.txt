@@ -1,0 +1,12 @@
+fornecedor (cadastra,altera,deleta)
+produto (cadastra,altera,deleta)
+cliente (cadastra,altera,deleta)
+veiculo (cadastra,altera,deleta)
+venda (cadastra,altera,deleta)
+vendedor ()
+
+
+
+fornecedor id = 5b1b006a96c38b14c93b14b5
+cliente id = 5b1b0fd4cbd07924e382a2e1
+produto id = 5b1b1d34c93d1f35605b654c

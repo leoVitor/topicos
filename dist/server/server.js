@@ -17,7 +17,7 @@ const tratamento_error_1 = require("./tratamento.error");
 class Server {
     constructor() {
         this.aplicacao = restify.createServer({
-            name: "Teste",
+            name: "Dist Grãos",
             version: "0.1"
         });
     }
