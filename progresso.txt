@@ -3,7 +3,7 @@ produto (cadastra,altera,deleta)
 cliente (cadastra,altera,deleta)
 veiculo (cadastra,altera,deleta)
 venda (cadastra,altera,deleta)
-vendedor ()
+vendedor (cadastra,altera,deleta)
 
 
 

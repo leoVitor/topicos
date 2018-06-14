@@ -1,8 +1,7 @@
 import * as restify from 'restify'
 import {Rotas} from '../comum/rotas'
 import {Vendedor} from '../vendedor/vendedor.model'
-import { vendaRotas } from '../venda/venda.rotas';
-import { INSPECT_MAX_BYTES } from 'buffer';
+import { vendaRotas } from '../venda/venda.rotas'
 
 class VendedorRotas extends Rotas{
     aplicarRotas(aplicacao:restify.Server){
