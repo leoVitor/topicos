@@ -2,9 +2,9 @@ import mongoose from 'mongoose'
 
 export interface Cliente extends mongoose.Document{
     nome: string,
-    cpf: string,
+    cpf: number,
     end: string,
-    fone: string,    
+    fone: number,    
 }
 
 
@@ -13,13 +13,13 @@ const clienteSchema = new mongoose.Schema({
         type:String
     },
     cpf:{
-        type:String
+        type:Number
     },
     end:{
         type:String
     },
     fone:{
-        type:String
+        type:Number
     }      
 })
 

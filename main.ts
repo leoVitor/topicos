@@ -5,15 +5,17 @@ import {produtoRotas} from './produto/produto.rotas'
 import {veiculoRotas} from './veiculo/veiculo.rotas'
 import {vendaRotas} from './venda/venda.rotas'
 import {vendedorRotas} from './vendedor/vendedor.rotas'
+import {transportadoraRotas} from './transportadora/transportadora.rotas'
+import { estoqueRotas } from './estoque/estoque.rota';
 
 
 
 const server:Server = new Server();
 
-server.inicializar([fornecedorRotas,clienteRotas,produtoRotas,veiculoRotas,vendaRotas,vendedorRotas]).then(server =>{
-    console.log(`Seu ctrl-C + ctrl-V deu certo Servidor executando na porta ${server.aplicacao.address().port}`)
+server.inicializar([fornecedorRotas,clienteRotas,produtoRotas,veiculoRotas,vendaRotas,vendedorRotas,transportadoraRotas,estoqueRotas]).then(server =>{
+    console.log(`Háaaa Miseravi acertouuuu ele rodou ${server.aplicacao.address().port}`)
 }).catch(error =>{
-    console.log("Servidor deu prego veja o erro seu baitola")
+    console.log("Um ameaça foi detectado")
     console.error(error)
     process.exit(1)
 })

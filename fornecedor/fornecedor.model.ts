@@ -1,24 +1,29 @@
 import mongoose from 'mongoose'
 
 export interface Fornecedor extends mongoose.Document{
+    _id:object,
     nome:string,
-    cnpj:string,
-    telefone:string,
+    cpf:number,
+    fone:number,
     email:string,
+    produto:object,
 }
 
 const fornecedorSchema = new mongoose.Schema({
     nome:{
         type:String
     },
-    cnpj:{
-        type:String
+    cpf:{
+        type:Number
     },
-    telefone:{
-        type:String
+    fone:{
+        type:Number
     },
     email:{
         type:String
+    },
+    produto:{
+        type:mongoose.Schema.Types.ObjectId,
     }
 })
 

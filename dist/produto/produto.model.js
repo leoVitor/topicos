@@ -8,11 +8,8 @@ const produtoSchema = new mongoose_1.default.Schema({
     nome: {
         type: String
     },
-    forn: {
-        type: String
-    },
     valor: {
-        type: String
+        type: Number
     }
 });
 exports.Produto = mongoose_1.default.model('Produto', produtoSchema);

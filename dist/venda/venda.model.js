@@ -6,16 +6,19 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importDefault(require("mongoose"));
 const vendaSchema = new mongoose_1.default.Schema({
     fornecedor: {
-        type: String
+        type: mongoose_1.default.Schema.Types.ObjectId
     },
     cliente: {
-        type: String
+        type: mongoose_1.default.Schema.Types.ObjectId
     },
     produto: {
-        type: String
+        type: mongoose_1.default.Schema.Types.ObjectId
     },
     valor: {
-        type: String
+        type: Number
+    },
+    qtd: {
+        type: Number
     }
 });
 exports.Venda = mongoose_1.default.model('Venda', vendaSchema);

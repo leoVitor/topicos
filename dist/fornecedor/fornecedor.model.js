@@ -8,14 +8,17 @@ const fornecedorSchema = new mongoose_1.default.Schema({
     nome: {
         type: String
     },
-    cnpj: {
-        type: String
+    cpf: {
+        type: Number
     },
-    telefone: {
-        type: String
+    fone: {
+        type: Number
     },
     email: {
         type: String
+    },
+    produto: {
+        type: mongoose_1.default.Schema.Types.ObjectId,
     }
 });
 exports.Fornecedor = mongoose_1.default.model('Fornecedor', fornecedorSchema);

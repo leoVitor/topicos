@@ -2,20 +2,15 @@ import mongoose from 'mongoose'
 
 export interface Produto extends mongoose.Document{
     nome:string,
-    forn:string,
-    valor:string,
-
+    valor:number, //Valor de venda 
 }
 
 const produtoSchema = new mongoose.Schema({
     nome:{
         type:String
     },
-    forn:{
-        type:String
-    },
     valor:{
-        type:String
+        type:Number
     }
 })
 

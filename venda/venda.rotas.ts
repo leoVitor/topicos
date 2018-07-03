@@ -1,6 +1,6 @@
 import * as restify from 'restify'
 import {Rotas} from "../comum/rotas"
-import {Venda} from './venda.model'
+import {Venda} from "./venda.model"
 
 class VendaRotas extends Rotas{
     aplicarRotas(aplicacao: restify.Server){
@@ -11,9 +11,8 @@ class VendaRotas extends Rotas{
             })
         })
         aplicacao.post('/venda',(req, resp ,next)=>{
-            let produto = new Venda  (req.body)
-
-            produto.save().then(venda=>{
+            let venda = new Venda  (req.body)
+            venda.save().then(venda=>{
                 resp.json(venda)
             },err =>{
                 console.log(err) 

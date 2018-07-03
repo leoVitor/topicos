@@ -10,6 +10,9 @@ const veiculoSchema = new mongoose_1.default.Schema({
     },
     placa: {
         type: String
+    },
+    transportadora: {
+        type: mongoose_1.default.Schema.Types.ObjectId
     }
 });
 exports.Veiculo = mongoose_1.default.model('Veiculo', veiculoSchema);

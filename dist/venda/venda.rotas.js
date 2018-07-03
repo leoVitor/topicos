@@ -11,8 +11,8 @@ class VendaRotas extends rotas_1.Rotas {
             });
         });
         aplicacao.post('/venda', (req, resp, next) => {
-            let produto = new venda_model_1.Venda(req.body);
-            produto.save().then(venda => {
+            let venda = new venda_model_1.Venda(req.body);
+            venda.save().then(venda => {
                 resp.json(venda);
             }, err => {
                 console.log(err);
